@@ -1,0 +1,59 @@
+<html dir="ltr" lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Steam ID">
+    <meta name="application-name" content="Steam ID">
+
+    <title>Steam ID</title>
+    <meta name="title" content="Steam ID" />
+    <meta name="description" content="Encontra o teu Steam ID (SteamID64) em securing.guide. Obtenha uma melhor segurança de conta para garantir que as suas contas não são roubadas!" />
+    <meta name="theme-color" content="#000000" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://steam.id" />
+    <meta property="og:image" content="./icons/steam.png" />
+    <meta property="og:title" content="Steam ID" />
+    <meta property="og:site_name" content="Steam ID" />
+    <meta property="og:description" content="Encontra o teu Steam ID (SteamID64) em securing.guide. Obtenha uma melhor segurança de conta para garantir que as suas contas não são roubadas!" />
+
+    <meta property="twitter:url" content="https://steam.id" />
+    <meta property="twitter:title" content="Steam ID" />
+    <meta property="twitter:description" content="Encontra o teu Steam ID (SteamID64) em securing.guide. Obtenha uma melhor segurança de conta para garantir que as suas contas não são roubadas!" />
+    <meta property="twitter:image" content="./icons/steam.png" />
+
+    <link rel="preload stylesheet" href="./css/style.css" as="style">
+    <link rel="preconnect" href="https://steam.id">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=block" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/animations/shift-away.css" />
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="./favicon.ico">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.umd.min.js" crossorigin="anonymous"></script>
+    <script type="module" crossorigin="anonymous" src="https://totp.codes/js/rolling-number.js"></script>
+    <script src="./js/steamid.js" defer></script>
+    <script>window.addEventListener("load",()=>document.body.classList.remove("preload"))</script>
+</head>
+
+<body class="preload">
+    <a rel="nofollow" href="https://github.com/girltrans" target="_blank" title="GitHub Repositório"
+        class="github"><img src="./icons/github.png" alt="GitHub Icon" title="GitHub"></a>
+    <div class="container">
+        <h1><a href="./steamid.html">Steam ID</a><i></i></h1>
+        <div class="steamOuter">
+            <input type="text" autocomplete="off" id="vanity" placeholder="cole aqui o seu identificador personalizado">
+            <layflags-rolling-number data-minimum="17" id="steamid">00000000000000000</layflags-rolling-number>
+            <p>Steam ID / clique para copiar</b></p>
+        </div>
+    </div>
+</body>
+
+</html>
