@@ -88,10 +88,6 @@ p,
     font-weight: 500;
 }
 
-a:hover {
-    opacity: .6;
-}
-
 h1 {
     font-weight: 400;
     font-size: 1.55em;
