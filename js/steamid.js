@@ -76,9 +76,9 @@ function fallbackCopyTextToClipboard(text) {
     try {
         var successful = document.execCommand('copy');
         var msg = successful ? 'successful' : 'unsuccessful';
-        console.log('Fallback: Copying text command was ' + msg);
+        console.log('Recuo: O Comando De Cópia De Texto Foi ' + msg);
     } catch (err) {
-        console.error('Fallback: Oops, unable to copy', err);
+        console.error('Recuo: Oops, Não Foi Possível Copiar', err);
     }
 
     document.body.removeChild(textArea);
@@ -90,9 +90,9 @@ function copyTextToClipboard(text) {
         return;
     }
     navigator.clipboard.writeText(text).then(function () {
-        console.log('Async: Copying to clipboard was successful!');
+        console.log('Assíncrono: A Cópia Para a Área De Transferência Foi Efectuada Com Êxito!');
     }, function (err) {
-        console.error('Async: Could not copy text: ', err);
+        console.error('Assíncrono: Não Foi Possível Copiar o Texto: ', err);
     });
 }
 
